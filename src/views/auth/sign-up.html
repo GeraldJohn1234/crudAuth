@@ -1,0 +1,87 @@
+<section class="container container-fluid">
+    <section class="row">
+        <section class=" col-12 col-sm-9 col-md-5">
+
+            <div class="form-container pb-5 px-5 pt-3 bg-dark rounded mt-5 text-light">
+
+                <form class="signup-form" action="/save-user" method="POST">
+                    <div class="ic">
+                        <i class="ic fa fa-user-plus"></i>
+                    </div>
+                    {{> messages}}
+                    <label for="inputPassword">Username</label>
+                    <div class="input-group mb-3">
+                        <div class="input-group-prepend">
+                            <span class="input-group-text" id="basic-addon1">
+                                <i class="fa fa-user" aria-hidden="true"></i>
+                            </span>
+                        </div>
+                        <input type="text" class="form-control" name="username" id="username" required placeholder="Username" aria-label="Username" aria-describedby="basic-addon1">
+                    </div>
+                    <label for="inputPassword">Password</label>
+                    <div class="input-group mb-3">
+                        <div class="input-group-prepend">
+                            <span class="input-group-text" id="basic-addon1">
+                                <i class="fa fa-key" aria-hidden="true"></i>
+                            </span>
+                        </div>
+                        <input type="password" name="password" id="password" class="form-control password" required placeholder="Password" aria-label="Password" aria-describedby="basic-addon1">
+                        <div class="input-group-append">
+                            <span class="input-group-text" id="basic-addon2">
+                                <i class="fa fa-eye toggle-password" aria-hidden="true"></i>
+                            </span>
+                        </div>
+                    </div>
+                    <label for="inputPassword">Confirm-Password</label>
+                    <div class="input-group mb-3">
+                        <div class="input-group-prepend">
+                            <span class="input-group-text" id="basic-addon1">
+                                <i class="fa fa-key" aria-hidden="true"></i>
+                            </span>
+                        </div>
+                        <input type="password" name="password_" id="repassword" class="form-control password" required placeholder="Confirm-Password" aria-label="Confirm-Password" aria-describedby="basic-addon1">
+                        <div class="input-group-append">
+                            <span class="input-group-text" id="basic-addon2">
+                                <i class="fa fa-eye toggle-password" aria-hidden="true"></i>
+                            </span>
+                        </div>
+                    </div>
+                    <div class="text-center">
+                        <span class="term rmsg"></span>
+                    </div>
+                    <hr/>
+                    <label for="inputPassword">Email Adress</label>
+                    <div class="input-group mb-3">
+                        <div class="input-group-prepend">
+                            <span class="input-group-text" id="basic-addon1">
+                                @
+                            </span>
+                        </div>
+                        <input type="email" id="email" class="form-control" name="email" required placeholder="Email Adress" aria-label="Password" aria-describedby="basic-addon1">
+                    </div>
+                    <div class="text-center">
+                        <span class="term emsg"></span>
+                    </div>
+                    <div class="term">
+                        <label class="">
+                            <input type="checkbox" required>
+                            I agree with the
+                        </label>
+                        <a href="#">
+                            Terms & Conditions
+                        </a>
+                        <span>for Registration</span>
+                    </div>
+                    <input type="submit" id="signup" class="btn btn-primary btn-block" value="SIGN UP">
+                    <div class="opt1 text-center">
+                        <p>Already register?
+                            <a id="a" href="/">Sign in</a>
+                        </p>
+                    </div>
+                </form>
+
+            </div>
+
+        </section>
+    </section>
+</section>

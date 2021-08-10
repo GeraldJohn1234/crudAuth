@@ -1,0 +1,55 @@
+<section class="container container-fluid"> 
+  <section class="row">
+    <section class=" col-12 col-sm-9 col-md-5">
+
+      <div class="form-container pb-5 px-5 pt-3 bg-dark rounded mt-5 text-light">
+        
+        <form class="login-form form1" action="/authenticate" method="POST">
+
+          <div class="ic">
+            <i class="ic fa fa-user-circle-o"></i>
+          </div>
+          {{> messages}}
+          <label for="user">Username</label>
+          <div class="input-group mb-3">
+            <div class="input-group-prepend">
+              <span class="input-group-text" id="basic-addon1">
+                <i class="fa fa-user" aria-hidden="true"></i>
+              </span>
+            </div>
+            <input type="text" class="form-control" name="username" id="username" required placeholder="Username" aria-label="Username" aria-describedby="basic-addon1">
+          </div>
+
+          <label for="user">Password</label>
+          <div class="input-group mb-3">
+            <div class="input-group-prepend">
+              <span class="input-group-text" id="basic-addon1">
+                <i class="fa fa-unlock-alt" aria-hidden="true"></i>
+              </span>
+            </div>
+            <input type="password" name="password" id="password" class="form-control password" id="password" required placeholder="Password" aria-label="Password" aria-describedby="basic-addon1">
+            <div class="input-group-append">
+                <span class="input-group-text" id="basic-addon2">
+                    <i class="fa fa-eye toggle-password" aria-hidden="true"></i>
+                </span>
+            </div>
+          </div>
+
+          
+          <div class="">
+            <label class="remember-me">
+              <input type="checkbox">Remember me
+            </label>
+            
+          </div>
+          <input type="submit" class="btn btn-primary btn-block" value="LOGIN">
+          <div class="opt1 text-center">
+            <p>Not register? <a href="/sign-up">Create an Acount</a></p>
+          </div>
+        </form>
+      
+      </div>
+
+    </section>
+  </section>
+ </section> 
